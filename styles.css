@@ -1,0 +1,190 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* خلفية الموقع الرمادي */
+    color: #ffff; /* نص بلون داكن ليتناسب مع الخلفية الرمادية */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:#333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #56CCF2;
+}
+
+.courses {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.courses h2 {
+    font-size: 2.5em;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.courses ul {
+    list-style-type: none;
+}
+
+.courses li {
+    margin: 10px 0;
+}
+
+.courses a {
+    color: #56CCF2;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+}
+
+.courses a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+.contact {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* الرسوم المتحركة */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header, .intro, .courses, .contact {
+    animation: slideIn 1s ease-out;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro h2, .courses h2 {
+        font-size: 2em;
+    }
+
+    .courses a {
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+/* اجعل الصفحة متجاوبة باستخدام flexbox أو grid */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* اجعل العرض يتكيف مع الأجهزة الصغيرة */
+.container {
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* صور مرنة */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* استخدام media queries لتصميم الهاتف */
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+}
